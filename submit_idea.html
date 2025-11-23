@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Idea - Innovation Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { background: #f5f5f5; }
+        main { padding: 20px; max-width: 600px; margin: 0 auto; }
+        .form-card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; }
+        textarea { min-height: 100px; }
+        .submit-btn { background: #007bff; color: white; padding: 12px 30px; border: none; border-radius: 4px; cursor: pointer; }
+        .submit-btn:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="header-logo">
+                <span class="logo-icon">✨</span>
+                <div>
+                    <h1>INNOVATION HUB</h1>
+                    <span>Where Ideas Come to Life</span>
+                </div>
+            </a>
+            <nav>
+                <a href="index.html">🏠 Home</a>
+                <a href="submit_idea.html">💡 Submit Idea</a>
+                <a href="view_ideas.php">🔍 View Ideas</a>
+                <a href="dashboard.php">📊 Dashboard</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-card">
+            <h2>Submit Your Idea</h2>
+            <form action="submit_idea.php" method="POST">
+                <div class="form-group">
+                    <label for="title">Idea Title:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select Category</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Education">Education</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="submitter">Your Name:</label>
+                    <input type="text" id="submitter" name="submitter" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Idea</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            ✨ Instagram: <a href="https://www.instagram.com/rxthee7" target="_blank">rxthee7</a>
+            | 👻 Snapchat: <a href="https://www.snapchat.com/add/rxthee7" target="_blank">rxthee7</a>
+            | 📧 Email: <a href="mailto:aryanpc1195@gmail.com">aryanpc1195@gmail.com</a>
+            | 📞 <a href="tel:+917814232567">+91 7814232567</a>
+        </p>
+    </footer>
+</body>
+</html>
